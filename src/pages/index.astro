@@ -1,0 +1,34 @@
+---
+import Layout from '../layouts/Layout.astro'
+import tailyUI from 'taily-ui'
+---
+
+<Layout
+    title="Welcome to Feelicy"
+    description="Meditation, focus, mind mapping and goal planning in game format of Garden Simulator."
+>
+    <main class="select-none overflow-hidden">
+        <fragment
+            set:html={tailyUI.OpenSourcePromo({
+                logo: '/favicon.svg',
+                title: 'Feelicy',
+                color: 'success',
+                text: [
+                    { type: 'default', value: 'Create' },
+                    { type: 'primary', value: 'beautiful' },
+                    {
+                        type: 'default',
+                        value: 'forest of thoughts, plans and habbits inside the best platform for'
+                    },
+                    { type: 'secondary', value: 'self-improvement' }
+                ],
+                description: 'Meditation, focus, mind mapping and goal planning in game format of Garden Simulator.',
+                button: {
+                    title: 'Plant new tree',
+                    link: '/'
+                },
+                github: 'https://github.com/nikdelvin/feelicy'
+            })}
+        />
+    </main>
+</Layout>
