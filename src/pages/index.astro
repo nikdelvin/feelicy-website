@@ -25,9 +25,26 @@ import tailyUI from 'taily-ui'
                 description: 'Meditation, focus, mind mapping and goal planning in game format of Garden Simulator.',
                 button: {
                     title: 'Plant new tree',
-                    link: '/'
+                    link: '#kpi'
                 },
                 github: 'https://github.com/nikdelvin/feelicy'
+            })}
+        />
+        <fragment
+            id="kpi"
+            set:html={tailyUI.KPICards({
+                title: 'At your fingertips',
+                color: 'success',
+                cards: [
+                    { title: 'Mind', description1: 'mapping', description2: 'platform' },
+                    { title: 'Goal', description1: 'planning', description2: 'dashboard' },
+                    { title: 'Chill', description1: 'meditation', description2: 'music' },
+                    { title: 'Field', description1: 'for growing', description2: 'habbits' }
+                ],
+                button: {
+                    title: 'Touch the beauty',
+                    link: '/'
+                }
             })}
         />
     </main>
